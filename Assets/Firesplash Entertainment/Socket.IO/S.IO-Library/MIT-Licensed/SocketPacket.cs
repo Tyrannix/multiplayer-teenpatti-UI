@@ -27,7 +27,7 @@
  */
 #endregion
 
-namespace Firesplash.UnityAssets.SocketIO.MIT.Packet
+namespace Firesplash.GameDevAssets.SocketIO.MIT.Packet
 {
     public class SocketPacket {
 

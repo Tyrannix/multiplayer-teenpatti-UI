@@ -1,4 +1,4 @@
-﻿namespace Firesplash.UnityAssets.SocketIO.MIT
+﻿namespace Firesplash.GameDevAssets.SocketIO.MIT
 {
     public class Parser {
         internal static SIOEventStructure Parse(string json) {

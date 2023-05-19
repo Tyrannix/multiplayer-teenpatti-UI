@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Firesplash.UnityAssets.SocketIO
+namespace Firesplash.GameDevAssets.SocketIO
 {
     public class SocketIOInstance
     {
@@ -77,7 +77,7 @@ namespace Firesplash.UnityAssets.SocketIO
         /// <summary>
         /// Connect this Socket.IO instance using the stored parameters from last connect / component configuration
         /// </summary>
-        /// <seealso cref="Firesplash.UnityAssets.SocketIO.SocketIOInstance.Connect(String, Boolean, SIOAuthPayload)"/>
+        /// <seealso cref="Firesplash.GameDevAssets.SocketIO.SocketIOInstance.Connect(String, Boolean, SIOAuthPayload)"/>
         public virtual void Connect()
         {
             Connect(this.targetAddress, this.enableAutoReconnect, this.authPayload);
@@ -86,7 +86,7 @@ namespace Firesplash.UnityAssets.SocketIO
         /// <summary>
         /// Connect this Socket.IO instance using the component's set configuration but with (new) auth data
         /// </summary>
-        /// <seealso cref="Firesplash.UnityAssets.SocketIO.SocketIOInstance.Connect(String, Boolean, SIOAuthPayload)"/>
+        /// <seealso cref="Firesplash.GameDevAssets.SocketIO.SocketIOInstance.Connect(String, Boolean, SIOAuthPayload)"/>
         /// <param name="authPayload">An instance of SIOAuthPayload to be sent upon (re-)connection. Can for example be used to send an authentication token.</param>
         public virtual void Connect(SIOAuthPayload authPayload)
         {
@@ -97,7 +97,7 @@ namespace Firesplash.UnityAssets.SocketIO
         /// Connect this Socket.IO instance to a new target (this even works after the initial connect)
         /// This method sends a previously used auth payload (if available)
         /// </summary>
-        /// <seealso cref="Firesplash.UnityAssets.SocketIO.SocketIOInstance.Connect(String, Boolean, SIOAuthPayload)"/>
+        /// <seealso cref="Firesplash.GameDevAssets.SocketIO.SocketIOInstance.Connect(String, Boolean, SIOAuthPayload)"/>
         /// <param name="targetAddress">The server / IO address to connect to. Has to start with http:// or https:// (substitute ws with http or wss with https): http[s]://<Hostname>[:<Port>][/<path>]</param>
         /// <param name="enableReconnect">Shall we reconnect automatically on an unexpected connection loss?</param>
         public virtual void Connect(string targetAddress, bool enableReconnect)

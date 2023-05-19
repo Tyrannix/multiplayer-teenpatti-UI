@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Firesplash.UnityAssets.SocketIO.Internal
+namespace Firesplash.GameDevAssets.SocketIO.Internal
 {
     internal class SocketIOManager
     {

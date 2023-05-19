@@ -29,9 +29,9 @@
 #endregion
 
 using System.Text;
-using Firesplash.UnityAssets.SocketIO.MIT.Packet;
+using Firesplash.GameDevAssets.SocketIO.MIT.Packet;
 
-namespace Firesplash.UnityAssets.SocketIO.MIT {
+namespace Firesplash.GameDevAssets.SocketIO.MIT {
     public class Decoder {
         public static SocketPacket Decode(string data) {
 

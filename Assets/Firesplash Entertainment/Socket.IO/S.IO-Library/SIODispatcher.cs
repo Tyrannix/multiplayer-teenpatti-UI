@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 
-namespace Firesplash.UnityAssets.SocketIO.Internal
+namespace Firesplash.GameDevAssets.SocketIO.Internal
 {
 	/// <summary>
 	/// This behavior holds an action queue and dispatches those actions on the unity player's main thread. It's singleton is accessed through SIODispatcher.Instance
@@ -63,7 +63,7 @@ namespace Firesplash.UnityAssets.SocketIO.Internal
 		{
 			if (_instance == null)
 			{
-				_instance = new GameObject("Firesplash.UnityAssets.SocketIO.SIODispatcher").AddComponent<SIODispatcher>();
+				_instance = new GameObject("Firesplash.GameDevAssets.SocketIO.SIODispatcher").AddComponent<SIODispatcher>();
 				DontDestroyOnLoad(_instance.gameObject);
 			}
 		}

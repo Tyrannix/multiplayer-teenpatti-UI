@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
+using Firesplash.GameDevAssets.SocketIO;
 using UnityEngine;
-using Firesplash.UnityAssets.SocketIO;
+
 
 public class WebSocketManager: MonoBehaviour,IDataPersistence{
     // protected SocketIOUnity _socket;
@@ -40,12 +41,14 @@ public class WebSocketManager: MonoBehaviour,IDataPersistence{
         // });
         // _socket.OnConnected += onSocketConnected;
         // _socket.Connect();
-        _socket.Instance.On("connected",onSocketConnected);
+        _socket.Instance.On("connect",onSocketConnected);
         auth = new SIOAuthPayload();
         auth.AddElement("authorization",token);
         Debug.Log(token);
-        // _socket.Instance.Connect(auth);
-        _socket.Instance.Connect("https://api-ludo-multiplayer.odinflux.com",true,auth);
+        _socket.Instance.Connect(auth);
+        // _socket.Instance.Connect("http://192.168.0.110:5020",true,auth);
+        // _socket.Instance.Connect("https://api-ludo-multiplayer.odinflux.com",true,auth);
+        // _socket.Instance.Connect("https://sio-v4-example.unityassets.i01.clu.firesplash.de",true,auth);
     }
 
     public void Disconnect(){
@@ -62,7 +65,7 @@ public class WebSocketManager: MonoBehaviour,IDataPersistence{
         _socket.Instance.Emit(eventName,JsonUtility.ToJson(data),false);
     }
 
-    public void ListenEvent(string eventName,Firesplash.UnityAssets.SocketIO.SocketIOInstance.SocketIOEvent callback){
+    public void ListenEvent(string eventName,Firesplash.GameDevAssets.SocketIO.SocketIOInstance.SocketIOEvent callback){
         _socket.Instance.On(eventName,callback);
     }
 

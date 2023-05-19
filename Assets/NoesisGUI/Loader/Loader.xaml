@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:Multiplayer_Teenpatti.Assets.NoesisGUI.Loader"
              xmlns:noesis="clr-namespace:NoesisGUIExtensions;assembly=Noesis.GUI.Extensions"
              mc:Ignorable="d" Width="{x:Static SystemParameters.PrimaryScreenWidth}"  
-                Height="{x:Static SystemParameters.PrimaryScreenHeight}" SnapsToDevicePixels="True">
+                Height="{x:Static SystemParameters.PrimaryScreenHeight}" SnapsToDevicePixels="True" Background="WhiteSmoke">
     <Grid>
         <noesis:RiveControl HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="/Assets/NoesisGUI/Loader/loader.riv">
             <noesis:RiveInput InputName="LoadComplete" InputValue="{Binding LoaderComplete}" />

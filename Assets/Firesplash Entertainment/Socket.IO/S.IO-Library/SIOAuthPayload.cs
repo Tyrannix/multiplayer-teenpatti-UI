@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Text;
 
-namespace Firesplash.UnityAssets.SocketIO
+namespace Firesplash.GameDevAssets.SocketIO
 {
     /// <summary>
     /// Creates an object to be sent while connecting to the server.

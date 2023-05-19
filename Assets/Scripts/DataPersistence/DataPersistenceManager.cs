@@ -62,7 +62,7 @@ public class DataPersistenceManager : MonoBehaviour
         if(res.success && userData.userId != null){
             Debug.Log("User Already Logged In");
             // MenuManager.instance.ChangeScreen(1);
-            // RoomManager.instance.ConnectToSocket();
+            RoomManager.instance.ConnectToSocket();
             MenuScreenManager.instance.ChangeScreen(MenuScreenManager.Screens.ModeScreen);
         }
     }

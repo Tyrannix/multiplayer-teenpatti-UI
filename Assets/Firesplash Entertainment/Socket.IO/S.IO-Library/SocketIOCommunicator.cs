@@ -1,8 +1,8 @@
-﻿using Firesplash.UnityAssets.SocketIO.Internal;
+﻿using Firesplash.GameDevAssets.SocketIO.Internal;
 using System;
 using UnityEngine;
 
-namespace Firesplash.UnityAssets.SocketIO
+namespace Firesplash.GameDevAssets.SocketIO
 {
     [DisallowMultipleComponent]
     [AddComponentMenu("Networking/Socket.IO/Socket.IO Communicator (v3 and v4)")]

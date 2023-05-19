@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 #endif
 
-namespace Firesplash.UnityAssets.SocketIO.Internal
+namespace Firesplash.GameDevAssets.SocketIO.Internal
 {
 #if UNITY_WEBGL
     internal class SocketIOWebGLInstance : SocketIOInstance

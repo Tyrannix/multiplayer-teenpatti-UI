@@ -93,7 +93,7 @@ public class LoginServices : MonoBehaviour,IDataPersistence
             DataPersistenceManager.instance.saveData();
             DataPersistenceManager.instance.loadData();
             // RoomManager.instance.Invoke("ConnectToSocket",0.5f);
-            // RoomManager.instance.ConnectToSocket();
+            RoomManager.instance.ConnectToSocket();
         }
     }
 

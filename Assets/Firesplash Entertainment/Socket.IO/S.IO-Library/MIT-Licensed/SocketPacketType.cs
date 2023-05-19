@@ -30,7 +30,7 @@
 using UnityEngine;
 using System.Collections;
 
-namespace Firesplash.UnityAssets.SocketIO.MIT.Packet {
+namespace Firesplash.GameDevAssets.SocketIO.MIT.Packet {
     public enum SocketPacketType {
 
         UNKNOWN = -1,

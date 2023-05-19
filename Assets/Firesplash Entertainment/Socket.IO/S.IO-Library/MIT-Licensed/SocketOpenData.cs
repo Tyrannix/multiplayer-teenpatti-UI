@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace Firesplash.UnityAssets.SocketIO.MIT {
+namespace Firesplash.GameDevAssets.SocketIO.MIT {
     [System.Serializable]
     public class SocketOpenData {
 

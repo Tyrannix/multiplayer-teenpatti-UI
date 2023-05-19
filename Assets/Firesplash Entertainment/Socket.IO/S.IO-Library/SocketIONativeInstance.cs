@@ -1,7 +1,7 @@
-﻿using Firesplash.UnityAssets.SocketIO;
-using Firesplash.UnityAssets.SocketIO.Internal;
-using Firesplash.UnityAssets.SocketIO.MIT;
-using Firesplash.UnityAssets.SocketIO.MIT.Packet;
+﻿using Firesplash.GameDevAssets.SocketIO;
+using Firesplash.GameDevAssets.SocketIO.Internal;
+using Firesplash.GameDevAssets.SocketIO.MIT;
+using Firesplash.GameDevAssets.SocketIO.MIT.Packet;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -10,8 +10,8 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
-using Decoder = Firesplash.UnityAssets.SocketIO.MIT.Decoder;
-using Encoder = Firesplash.UnityAssets.SocketIO.MIT.Encoder;
+using Decoder = Firesplash.GameDevAssets.SocketIO.MIT.Decoder;
+using Encoder = Firesplash.GameDevAssets.SocketIO.MIT.Encoder;
 
 #if HAS_JSON_NET
 using Newtonsoft.Json;
@@ -59,6 +59,8 @@ internal class SocketIONativeInstance : SocketIOInstance
     public override void Connect(string targetAddress, bool enableReconnect, SIOAuthPayload authPayload)
     {
         base.Connect(targetAddress, enableReconnect, authPayload);
+
+        int targetFramerate = Application.targetFrameRate;
 
         Task.Run(async () =>
         {
@@ -138,8 +140,8 @@ internal class SocketIONativeInstance : SocketIOInstance
 
                 if (WebSocketWriterThread == null || !WebSocketWriterThread.IsAlive)
                 {
-                    WebSocketWriterThread = new Thread(new ThreadStart(SIOSocketWriter));
-                    WebSocketWriterThread.Start();
+                    WebSocketWriterThread = new Thread(new ParameterizedThreadStart(SIOSocketWriter));
+                    WebSocketWriterThread.Start(targetFramerate);
                 }
 
                 if (WatchdogThread == null || !WatchdogThread.IsAlive)
@@ -409,11 +411,11 @@ internal class SocketIONativeInstance : SocketIOInstance
         }
     }
 
-    private async void SIOSocketWriter()
+    private async void SIOSocketWriter(object targetFramerate)
     {
         //15ms is a bit less than the time one frame has on 60 FPS. We use a higher delay depending on the target framerate. 50ms is max possible value.
-        int sleepMS = Application.targetFrameRate <= 0 ? 30 : Mathf.Clamp(Mathf.FloorToInt(990f / Application.targetFrameRate), 15, 50);
-
+        int sleepMS = (int)targetFramerate <= 0 ? 30 : Mathf.Clamp(Mathf.FloorToInt(990f / (int)targetFramerate), 15, 50);
+        SocketIOManager.LogDebug("Starting writer");
         while (Socket.State == WebSocketState.Open)
         {
             var msg = sendQueue.Take(cTokenSrc.Token);
@@ -422,6 +424,7 @@ internal class SocketIONativeInstance : SocketIOInstance
                 continue;
             }
             await WritePacketToSIOSocketAsync(msg.Item2, cTokenSrc.Token);
+
             if (sendQueue.Count < 1)
             {
                 if (cTokenSrc.Token.IsCancellationRequested) return;
