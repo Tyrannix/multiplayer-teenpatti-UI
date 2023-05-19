@@ -81,13 +81,13 @@ public class LoginServices : MonoBehaviour,IDataPersistence
                 Value = "application/json"
             };
             List<RequestHeader> headers = new List<RequestHeader> { header };
-            // UIController.instance.toggleLoader(true);
+            UIController.instance.toggleLoader(true);
             StartCoroutine(APIHelper.PostRequest("auth/login",body,getLoginData,headers));
         }
     }
 
     void getLoginData(string? data){
-        // UIController.instance.toggleLoader(false);
+        UIController.instance.toggleLoader(false);
         res = JsonUtility.FromJson<LoginResponse>(data);
         if(res != null && res.success){
             DataPersistenceManager.instance.saveData();

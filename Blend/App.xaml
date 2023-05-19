@@ -1,0 +1,13 @@
+<Application x:Class="Multiplayer_Teenpatti.App"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:Multiplayer_Teenpatti"
+  StartupUri="/Multiplayer-Teenpatti;component/Assets/Multiplayer-TeenpattiMainView.xaml">
+  <Application.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/Noesis.GUI.Extensions;component/Theme/NoesisTheme.DarkBlue.xaml"/>
+      </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+  </Application.Resources>
+</Application>

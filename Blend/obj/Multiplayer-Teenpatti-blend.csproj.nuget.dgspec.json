@@ -1,0 +1,57 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\unity projects\\Multiplayer-Teenpatti\\Multiplayer-Teenpatti-blend.csproj": {}
+  },
+  "projects": {
+    "D:\\unity projects\\Multiplayer-Teenpatti\\Multiplayer-Teenpatti-blend.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\unity projects\\Multiplayer-Teenpatti\\Multiplayer-Teenpatti-blend.csproj",
+        "projectName": "Multiplayer-Teenpatti",
+        "projectPath": "D:\\unity projects\\Multiplayer-Teenpatti\\Multiplayer-Teenpatti-blend.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "D:\\unity projects\\Multiplayer-Teenpatti\\Blend\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Noesis.GUI.Extensions": {
+              "target": "Package",
+              "version": "[3.0.19, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
