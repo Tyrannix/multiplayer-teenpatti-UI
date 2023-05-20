@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System;
+using System.Text.RegularExpressions;
 using System.Net.Mail;
 using UnityEngine;
 using TMPro;
@@ -16,7 +17,7 @@ public class LoginServices : MonoBehaviour,IDataPersistence
     [Serializable]
     private class LoginData{
         public string email;
-        public int mobileNumber;
+        public long mobileNumber;
         public string password;
     }
     [Serializable]
@@ -100,19 +101,19 @@ public class LoginServices : MonoBehaviour,IDataPersistence
 
     private static LoginData? validateData(string username,string password){
         string? email = null;
-        int? number = null;
+        long? number = null;
         if(IsValidEmail(username)){
             email = username;
         }
         else {
-            var check = Int32.TryParse(username,out int value);
+            var check = IsValidMobileNumber(username);
             if(check){
-                number = value;
+                number = Convert.ToInt64(username);
             }
         }
 
         if((email != null || number != null) && password != ""){
-           return new LoginData {email = email,mobileNumber=number==null ? 0 : (int)number,password = password};
+           return new LoginData {email = email,mobileNumber= (long)(number ==null ? 0 : number), password = password};
         }
 
         return null;
@@ -132,5 +133,12 @@ public class LoginServices : MonoBehaviour,IDataPersistence
         }
 
         return valid;
+    }
+
+    private static bool IsValidMobileNumber(string number)
+    {
+        // Regex for 10-digit mobile number
+        var regex = new Regex(@"^\d{10}$");
+        return regex.IsMatch(number);
     }
 }

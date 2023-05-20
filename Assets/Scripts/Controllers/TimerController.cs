@@ -9,8 +9,10 @@ public class TimerController : MonoBehaviour
     private Material material;
 
     [SerializeField]
-    [Range(0,360)]
+    [Range(0,30)]
     int timer;
+
+    public int maxTimer = 30;
 
     void Start()
     {
@@ -24,6 +26,6 @@ public class TimerController : MonoBehaviour
     }
 
     public void setTimer(int value){
-        timer = value;  
+        timer = 360 - (value * (360/maxTimer));  
     }
 }

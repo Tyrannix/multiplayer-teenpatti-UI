@@ -57,7 +57,7 @@ public class DataPersistenceManager : MonoBehaviour
 
     private void CheckValidToken(string data){
         // Debug.Log(data);
-        var res = JsonUtility.FromJson<SocketResponse>(data);
+        var res = JsonUtility.FromJson<SocketResponse<string>>(data);
         // Debug.Log(res.success);
         if(res.success && userData.userId != null){
             Debug.Log("User Already Logged In");
