@@ -36,11 +36,13 @@ public class Player
 
     public void assignPlayerController(PlayerController playerController){
         this.playerController = playerController;
+        this.playerController.setPlayer(this);
     }
     public void updatePlayer(int balance,int order)
     {
         this.balance = balance;
         this.order = order;
+        if(playerController != null) playerController.UpdateBalance();
     }
     public void updatePlayer(int balance,int order,string playerName,bool blind,bool fold,string[] cards)
     {
@@ -51,7 +53,8 @@ public class Player
         this.fold = fold;
         this.cards = cards;
 
-        playerController.EnableCards();
+        if(playerController != null) playerController.EnableCards();
+        if(playerController != null) playerController.UpdateBalance();
     }
     
 

@@ -13,6 +13,8 @@ public class GameController
 
     public static List<Player> players = new List<Player>(){};
 
+    public static string winner;
+
     private static string turn; 
 
     public static string Turn 
@@ -36,8 +38,9 @@ public class GameController
     {
        Player myPlayer = players.FirstOrDefault(p => p.playerID == GameController.player.playerID);
        myPlayer.assignPlayerController(playerControllers[0]);
+       myPlayer.playerController.setPlayer(myPlayer);
        myPlayer.playerController.active = true;
-       myPlayer.playerController.updateUserName(player.playerID);
+       myPlayer.playerController.updateUserName();
 
        int numberOfSeats = 5;
 
@@ -55,7 +58,8 @@ public class GameController
             var SeatNumber = (players[i].order + distance) % numberOfSeats;
             players[i].assignPlayerController(playerControllers[SeatNumber]);
             players[i].playerController.active = true;
-            players[i].playerController.updateUserName(players[i].playerID);
+            players[i].playerController.updateUserName();
+            players[i].playerController.UpdateBalance();
         }
 
     }
@@ -70,10 +74,52 @@ public class GameController
         turnPlayer.playerController.showTimer(timer);
     }
 
+    public static int CountAlivePlayers()
+    {
+        if(players != null)
+        {
+            return players.Count((_player)=>!_player.fold);
+        }
+        return 0;
+    }
+
     static void HideTimers(){
         players.ForEach((_player)=>{
             _player.playerController.HideTimer();
         });
+    }
+
+    public static void ResetGame()
+    {
+        players = new List<Player>(){};
+        GameController.winner = null;
+    }
+
+    public static void ShowAllCards()
+    {
+        players.ForEach((_player)=>{
+            _player.blind = false;
+            _player.playerController.showCards();
+        });
+    }
+    public static void ShowCardsOfPerticularPlayer(List<string> playerIds)
+    {
+        players.ForEach((_player)=>{
+            if(playerIds.Contains(_player.playerID))
+            {
+                _player.playerController.showCards();
+            }
+        });
+    }
+
+    public static void StartStopWinningAnimation(bool start)
+    {
+      Player winningPlayer = players.Find((_player)=>_player.playerID == winner);
+      if(winningPlayer != null && winningPlayer.playerController != null)
+      {
+        if(start) winningPlayer.playerController.startWinAnimation();
+        else winningPlayer.playerController.stopWinAnimation();
+      }
     }
 
 }

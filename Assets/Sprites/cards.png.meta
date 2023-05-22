@@ -129,7 +129,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: C1
+      name: AC
       rect:
         serializedVersion: 2
         x: 1
@@ -150,7 +150,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C2
+      name: 2C
       rect:
         serializedVersion: 2
         x: 96
@@ -171,7 +171,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C3
+      name: 3C
       rect:
         serializedVersion: 2
         x: 192
@@ -192,7 +192,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C4
+      name: 4C
       rect:
         serializedVersion: 2
         x: 288
@@ -213,7 +213,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C5
+      name: 5C
       rect:
         serializedVersion: 2
         x: 384
@@ -234,7 +234,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C6
+      name: 6C
       rect:
         serializedVersion: 2
         x: 480
@@ -255,7 +255,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C7
+      name: 7C
       rect:
         serializedVersion: 2
         x: 576
@@ -276,7 +276,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C8
+      name: 8C
       rect:
         serializedVersion: 2
         x: 672
@@ -297,7 +297,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C9
+      name: 9C
       rect:
         serializedVersion: 2
         x: 768
@@ -318,7 +318,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C10
+      name: 10C
       rect:
         serializedVersion: 2
         x: 864
@@ -339,7 +339,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C11
+      name: JC
       rect:
         serializedVersion: 2
         x: 960
@@ -360,7 +360,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C12
+      name: QC
       rect:
         serializedVersion: 2
         x: 1056
@@ -381,7 +381,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C13
+      name: KC
       rect:
         serializedVersion: 2
         x: 1152
@@ -402,7 +402,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: D1
+      name: AD
       rect:
         serializedVersion: 2
         x: 0
@@ -423,7 +423,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: D2
+      name: 2D
       rect:
         serializedVersion: 2
         x: 96
@@ -444,7 +444,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: D3
+      name: 3D
       rect:
         serializedVersion: 2
         x: 192
@@ -465,7 +465,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: D4
+      name: 4D
       rect:
         serializedVersion: 2
         x: 288
@@ -486,7 +486,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: D5
+      name: 5D
       rect:
         serializedVersion: 2
         x: 384
@@ -507,7 +507,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: D6
+      name: 6D
       rect:
         serializedVersion: 2
         x: 480
@@ -528,7 +528,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: D7
+      name: 7D
       rect:
         serializedVersion: 2
         x: 576
@@ -549,7 +549,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: D8
+      name: 8D
       rect:
         serializedVersion: 2
         x: 672
@@ -570,7 +570,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: D9
+      name: 9D
       rect:
         serializedVersion: 2
         x: 768
@@ -591,7 +591,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: D10
+      name: 10D
       rect:
         serializedVersion: 2
         x: 864
@@ -612,7 +612,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: D11
+      name: JD
       rect:
         serializedVersion: 2
         x: 960
@@ -633,7 +633,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: D12
+      name: QD
       rect:
         serializedVersion: 2
         x: 1056
@@ -654,7 +654,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: D13
+      name: KD
       rect:
         serializedVersion: 2
         x: 1152
@@ -675,7 +675,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: H1
+      name: AH
       rect:
         serializedVersion: 2
         x: 0
@@ -696,7 +696,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: H2
+      name: 2H
       rect:
         serializedVersion: 2
         x: 96
@@ -717,7 +717,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: H3
+      name: 3H
       rect:
         serializedVersion: 2
         x: 192
@@ -738,7 +738,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: H4
+      name: 4H
       rect:
         serializedVersion: 2
         x: 288
@@ -759,7 +759,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: H5
+      name: 5H
       rect:
         serializedVersion: 2
         x: 384
@@ -780,7 +780,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: H6
+      name: 6H
       rect:
         serializedVersion: 2
         x: 480
@@ -801,7 +801,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: H7
+      name: 7H
       rect:
         serializedVersion: 2
         x: 576
@@ -822,7 +822,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: H8
+      name: 8H
       rect:
         serializedVersion: 2
         x: 672
@@ -843,7 +843,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: H9
+      name: 9H
       rect:
         serializedVersion: 2
         x: 768
@@ -864,7 +864,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: H10
+      name: 10H
       rect:
         serializedVersion: 2
         x: 864
@@ -885,7 +885,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: H11
+      name: JH
       rect:
         serializedVersion: 2
         x: 960
@@ -906,7 +906,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: H12
+      name: QH
       rect:
         serializedVersion: 2
         x: 1056
@@ -927,7 +927,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: H13
+      name: KH
       rect:
         serializedVersion: 2
         x: 1152
@@ -948,7 +948,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: S1
+      name: AS
       rect:
         serializedVersion: 2
         x: 0
@@ -969,7 +969,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: S2
+      name: 2S
       rect:
         serializedVersion: 2
         x: 96
@@ -990,7 +990,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: S3
+      name: 3S
       rect:
         serializedVersion: 2
         x: 192
@@ -1011,7 +1011,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: S4
+      name: 4S
       rect:
         serializedVersion: 2
         x: 288
@@ -1032,7 +1032,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: S5
+      name: 5S
       rect:
         serializedVersion: 2
         x: 384
@@ -1053,7 +1053,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: S6
+      name: 6S
       rect:
         serializedVersion: 2
         x: 480
@@ -1074,7 +1074,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: S7
+      name: 7S
       rect:
         serializedVersion: 2
         x: 576
@@ -1095,7 +1095,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: S8
+      name: 8S
       rect:
         serializedVersion: 2
         x: 672
@@ -1116,7 +1116,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: S9
+      name: 9S
       rect:
         serializedVersion: 2
         x: 768
@@ -1137,7 +1137,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: S10
+      name: 10S
       rect:
         serializedVersion: 2
         x: 864
@@ -1158,7 +1158,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: S11
+      name: JS
       rect:
         serializedVersion: 2
         x: 960
@@ -1179,7 +1179,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: S12
+      name: QS
       rect:
         serializedVersion: 2
         x: 1056
@@ -1200,7 +1200,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: S13
+      name: KS
       rect:
         serializedVersion: 2
         x: 1152
@@ -1295,60 +1295,60 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       00: 201341741
+      10C: -899621925
+      10D: 1293415654
+      10H: 1969778665
+      10S: -1304171320
+      2C: 1525104184
+      2D: 237330730
+      2H: -1513283089
+      2S: 1656766131
+      3C: 1785461084
+      3D: 1665090928
+      3H: 139125651
+      3S: -610251095
+      4C: -2062793219
+      4D: -976794024
+      4H: 227228425
+      4S: 2063290841
+      5C: 612420381
+      5D: 291109969
+      5H: -1005114075
+      5S: 308901103
+      6C: 1025366612
+      6D: 221035426
+      6H: -1691974476
+      6S: -1803982090
+      7C: 1962550232
+      7D: 593927479
+      7H: 1839534826
+      7S: -435773186
+      8C: -1900500295
+      8D: -2103126021
+      8H: 2032701134
+      8S: -230756852
+      9C: 291196056
+      9D: -891466552
+      9H: 1348760535
+      9S: -599167855
+      AC: -1268345601
+      AD: 814675761
+      AH: 1597878361
+      AS: -1817630439
       B1: 517507254
       B2: -944176000
-      C1: -1268345601
-      C10: -899621925
-      C11: 600631879
-      C12: -1548009284
-      C13: 1930408960
-      C2: 1525104184
-      C3: 1785461084
-      C4: -2062793219
-      C5: 612420381
-      C6: 1025366612
-      C7: 1962550232
-      C8: -1900500295
-      C9: 291196056
-      D1: 814675761
-      D10: 1293415654
-      D11: 471885464
-      D12: -1441144197
-      D13: -1141293498
-      D2: 237330730
-      D3: 1665090928
-      D4: -976794024
-      D5: 291109969
-      D6: 221035426
-      D7: 593927479
-      D8: -2103126021
-      D9: -891466552
-      H1: 1597878361
-      H10: 1969778665
-      H11: 303409416
-      H12: -1592040878
-      H13: 1239145650
-      H2: -1513283089
-      H3: 139125651
-      H4: 227228425
-      H5: -1005114075
-      H6: -1691974476
-      H7: 1839534826
-      H8: 2032701134
-      H9: 1348760535
-      S1: -1817630439
-      S10: -1304171320
-      S11: 1991187289
-      S12: 1330947092
-      S13: 1396211685
-      S2: 1656766131
-      S3: -610251095
-      S4: 2063290841
-      S5: 308901103
-      S6: -1803982090
-      S7: -435773186
-      S8: -230756852
-      S9: -599167855
+      JC: 600631879
+      JD: 471885464
+      JH: 303409416
+      JS: 1991187289
+      KC: 1930408960
+      KD: -1141293498
+      KH: 1239145650
+      KS: 1396211685
+      QC: -1548009284
+      QD: -1441144197
+      QH: -1592040878
+      QS: 1330947092
       cards_55: 2130684921
       cards_56: 1311658825
       cards_57: 55696442
